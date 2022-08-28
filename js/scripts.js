@@ -9,6 +9,20 @@ window.addEventListener('load', function(){
 		let sum = parseInt(inp1.value) + parseInt(inp2.value);
 		res.innerHTML = sum;
 	});
+	btn.addEventListener('click', function(){
+		let min = parseInt(inp1.value) - parseInt(inp2.value);
+		res.innerHTML = min;
+	});
+	btn.addEventListener('click', function(){
+		let mult = parseInt(inp1.value) * parseInt(inp2.value);
+		res.innerHTML = mult;
+	});
+	btn.addEventListener('click', function(){
+		let divide = parseInt(inp1.value) / parseInt(inp2.value);
+		res.innerHTML = divide;
+		console.log(divide);
+	});
+	
 
 });
 
