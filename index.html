@@ -7,18 +7,17 @@
 		<link href="css/styles.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1>Hi Dima</h1>
 		<form>
 			<input type="text" class="inp1">
 			<select name="operation">
-				<option value="+" selected="selected">+</option>
-				<option value="-">-</option>
-				<option value="*">*</option>
-				<option value="/">/</option>
+				<option value="add" selected="selected">+</option>
+				<option value="subtract">-</option>
+				<option value="multiply">*</option>
+				<option value="divide">/</option>
 			</select>
 			<input type="text" class="inp2">
-			<input type="button" class="go" value="=">
-			<span class="res"></span>
+			<input type="button" id="submit" class="go" value="=">
+			<span class="result"></span>
 		</form>
 		<script src="js/scripts.js"></script>
 	</body>
