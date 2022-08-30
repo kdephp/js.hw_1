@@ -31,10 +31,11 @@ window.addEventListener('load', function(){
 			result.innerHTML = div;
 
 	}
+		console.log('внутри клика' + operation.value)
 	});
 	//result
-	console.log(operation.value)
 
+	console.log('вне клика' + operation.value)
 
 
 
