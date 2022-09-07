@@ -31,6 +31,7 @@ window.addEventListener('load', function(){
 			result.innerHTML = div;
 
 	}
+		this.disabled = true;
 		console.log('внутри клика' + operation.value)
 	});
 	//result
