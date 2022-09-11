@@ -1,0 +1,21 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta charset="UTF-8">  
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Using change event for Input elements</title>  
+</head>  
+<body align ="center">  
+   <input type="text" class="txtclass">  
+    <input type="button" value="Click me">  
+    </br>  
+    <label id="show"> </label>  
+    <script>  
+      let source = document.querySelector('.txtclass');  
+       let target = document.querySelector('#show');  
+        source.addEventListener('change', function () {  
+            target.textContent = this.value;  
+       });  
+    </script>  
+</body>  
+</html>  

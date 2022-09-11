@@ -5,6 +5,7 @@ window.addEventListener('load', function(){
 	let btn = document.querySelector('.go');
 	let result = document.querySelector('.result');
 	let operation = document.querySelector('select');
+	
 
 	btn.addEventListener('click', function(){
 	if (operation.value === 'add') {
@@ -31,13 +32,30 @@ window.addEventListener('load', function(){
 			result.innerHTML = div;
 
 	}
-		console.log('внутри клика' + operation.value)
+	
+	btn.disabled = true;
+
+
+	
+	inp1.addEventListener("change", (event) => {
+
+		btn.disabled = false;
+	  }, false);
+
+	inp2.addEventListener("change", (event) => {
+
+		btn.disabled = false;
+	  }, false);
+
+
+
+		console.log('внутри клика' + operation.value);
+		
 	});
 	//result
 
-	console.log('вне клика' + operation.value)
+	console.log('вне клика' + operation.value);
 
-
-
+	
 });
 
