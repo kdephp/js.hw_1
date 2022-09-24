@@ -8,31 +8,37 @@ window.addEventListener('load', function(){
 	
 
 	btn.addEventListener('click', function(){
-	if (operation.value === 'add') {
+		let num1 = parseInt(inp1.value);
+		let num2 = parseInt(inp2.value);
+		let oper = operation.value;
 
-			let sum = parseInt(inp1.value) + parseInt(inp2.value);
+	if (oper === 'add') {
+
+			let sum = num1 + num2;
 			result.innerHTML = sum;
 
 	}
-	else if (operation.value === 'subtract') {
+	else if (oper === 'subtract') {
 
-			let sub = parseInt(inp1.value) - parseInt(inp2.value);
+			let sub = num1 - num2;
 			result.innerHTML = sub;
 
 	}
 	else if (operation.value === 'multiply') {
 
-			let mult = parseInt(inp1.value) * parseInt(inp2.value);
+			let mult = num1 * num2;
 			result.innerHTML = mult;
 
 	}
 	else {
 
-			let div = parseInt(inp1.value) / parseInt(inp2.value);
+			let div = num1 / num2;
 			result.innerHTML = div;
 
 	}
-	
+
+
+
 	btn.disabled = true;
 
 
@@ -46,7 +52,6 @@ window.addEventListener('load', function(){
 
 		btn.disabled = false;
 	  }, false);
-
 
 
 		console.log('внутри клика' + operation.value);
